@@ -34,3 +34,54 @@
 .primary-ikon {
     height: 30px;
 }
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-top: 4px;
+}
+
+@media all and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .container-icon {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        border-top: 1px solid white;
+    }
+
+    .primary-ikon {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+}
